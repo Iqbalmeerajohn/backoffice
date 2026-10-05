@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Back-office automation by Iqbal Meera John</title>
+<meta name="description" content="Hiring an AP or AR clerk? Get a free role map of which duties can be automated, then a fixed-price build where your team only approves drafts.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23047857'/%3E%3Cpath d='M9 17l5 5 9-12' stroke='white' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">Iqbal Meera John<span>Back-office automation</span></a>
+    <nav>
+      <a href="#how">How it works</a>
+      <a href="#demo">Demo</a>
+      <a href="#data">Your data</a>
+      <a class="btn btn-sm" href="mailto:iqbalmeerajohn1@gmail.com?subject=Free%20role%20map&body=Job%20posting%20link%3A%20%0A%0ACompany%3A%20%0A">Get a free role map</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <h1>Hiring an AP clerk? Automate half the job first.</h1>
+      <p class="lede">I turn invoice entry, payment matching and reminders into automations that draft the work. Your team just approves.</p>
+      <div class="ctas">
+        <a class="btn" href="mailto:iqbalmeerajohn1@gmail.com?subject=Free%20role%20map&body=Job%20posting%20link%3A%20%0A%0ACompany%3A%20%0A">Get a free role map</a>
+        <a class="btn btn-ghost" href="#demo">Try the demo</a>
+      </div>
+    </div>
+    <figure class="hero-map">
+      <table>
+        <thead><tr><th>Duty from the posting</th><th>Hrs/wk</th><th>Automatable</th></tr></thead>
+        <tbody>
+          <tr><td>Enter vendor invoices into QuickBooks</td><td>12</td><td><b>about 80%</b></td></tr>
+          <tr><td>Match invoices to POs and receipts</td><td>6</td><td><b>about 70%</b></td></tr>
+          <tr><td>Answer vendor payment-status emails</td><td>5</td><td><b>about 60%</b></td></tr>
+          <tr><td>Track W-9s for 1099s</td><td>2</td><td><b>about 60%</b></td></tr>
+          <tr><td>Prepare and release payment runs</td><td>4</td><td>about 40%, release stays human</td></tr>
+        </tbody>
+      </table>
+      <figcaption>Excerpt from a sample role map for an accounts payable clerk posting. Hours are estimates.</figcaption>
+    </figure>
+  </section>
+
+  <section id="how" class="how wrap">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li>
+        <h3>Map <em>free</em></h3>
+        <p>Send me your job posting. Within 48 hours you get each duty scored: hours per week, how much can be automated, and what stays with a person. No system access needed.</p>
+      </li>
+      <li>
+        <h3>Build <em>from $1,500</em></h3>
+        <p>I automate the top two duties in 10 business days, on the tools you already use. Half up front, half on acceptance. If it saves under 5 hours a week over 30 days, the second half is waived.</p>
+      </li>
+      <li>
+        <h3>Run <em>from $600 a month</em></h3>
+        <p>Monitoring, fixes, exception handling, one new duty each month, and a monthly report of hours saved. Cancel with 30 days notice.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="demo" class="demo">
+    <div class="wrap">
+      <h2>See it work on sample invoices</h2>
+      <p class="sub">Pick a sample or drop in your own text-based PDF invoice. It all runs in your browser. Nothing is uploaded.</p>
+
+      <div class="demo-grid">
+        <div class="panel docs">
+          <h3>Inbox</h3>
+          <div id="sampleList" class="sample-list"></div>
+          <label class="drop" for="pdfInput">
+            <span>Or choose a PDF invoice</span>
+            <input id="pdfInput" type="file" accept="application/pdf">
+          </label>
+          <p id="pdfStatus" class="hint" role="status"></p>
+        </div>
+
+        <div class="panel extract">
+          <h3>Extracted draft bill</h3>
+          <div id="extractView" class="empty">Select an invoice to read it.</div>
+        </div>
+      </div>
+
+      <div class="panel queue">
+        <div class="queue-head">
+          <h3>Approval queue</h3>
+          <button id="exportBtn" class="btn btn-sm" disabled>Export approved to QuickBooks CSV</button>
+        </div>
+        <div id="queueView" class="empty">Drafts appear here. Nothing posts until someone approves it.</div>
+      </div>
+      <p class="hint">Sample vendors and amounts are invented for the demo. A real build connects to your inbox and accounting system and creates drafts there.</p>
+    </div>
+  </section>
+
+  <section id="data" class="data wrap">
+    <h2>Your books stay yours</h2>
+    <dl class="data-grid">
+      <div><dt>Drafts only</dt><dd>For the first 30 days, nothing is posted, paid or sent without one of your people approving it.</dd></div>
+      <div><dt>Access you control</dt><dd>Revocable logins or OAuth with the least access needed. I never get authority to release payments.</dd></div>
+      <div><dt>No training on your data</dt><dd>Your documents go only to paid AI services whose terms bar training on customer data.</dd></div>
+      <div><dt>Deleted on request</dt><dd>Nothing is stored on personal devices. Your data is deleted within 30 days of the work ending, if you ask.</dd></div>
+    </dl>
+  </section>
+
+  <section class="about wrap">
+    <h2>Who you would work with</h2>
+    <p>I am Iqbal Meera John, a software engineer based in India. I build each automation myself, use AI for the repetitive parts, and check the results by hand. For US teams the time difference helps: work runs overnight and is ready in the morning. You can see my code on <a href="https://github.com/Iqbalmeerajohn">GitHub</a>.</p>
+    <a class="btn" href="mailto:iqbalmeerajohn1@gmail.com?subject=Free%20role%20map&body=Job%20posting%20link%3A%20%0A%0ACompany%3A%20%0A">Get a free role map</a>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Iqbal Meera John, back-office automation</span>
+    <a href="mailto:iqbalmeerajohn1@gmail.com">iqbalmeerajohn1@gmail.com</a>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" defer></script>
+<script src="demo.js" defer></script>
+</body>
+</html>
